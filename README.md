@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save iis-image-url
+$ npm install --save is-image-url
 ```
 
 
