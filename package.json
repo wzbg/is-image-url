@@ -1,0 +1,35 @@
+{
+  "name": "is-image-url",
+  "version": "1.0.0",
+  "description": "Check if a url is an image",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "wzbg",
+    "email": "z3530515@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wzbg/is-image-url"
+  },
+  "keywords": [
+    "check",
+    "url",
+    "is",
+    "image",
+    "img",
+    "photo",
+    "pic",
+    "picture",
+    "jpg",
+    "jpeg",
+    "png",
+    "gif"
+  ],
+  "dependencies": {
+    "is-image": "^1.0.1"
+  }
+}
