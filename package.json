@@ -1,6 +1,6 @@
 {
   "name": "is-image-url",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Check if a url is an image",
   "main": "index.js",
   "scripts": {
@@ -30,6 +30,7 @@
     "gif"
   ],
   "dependencies": {
-    "is-image": "^1.0.1"
+    "is-image": "^1.0.1",
+    "url": "^0.10.3"
   }
 }
