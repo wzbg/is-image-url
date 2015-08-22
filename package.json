@@ -15,6 +15,10 @@
     "type": "git",
     "url": "https://github.com/wzbg/is-image-url"
   },
+  "bugs": {
+    "url": "https://github.com/wzbg/is-image-url/issues"
+  },
+  "homepage": "https://github.com/wzbg/is-image-url#readme",
   "keywords": [
     "check",
     "url",
