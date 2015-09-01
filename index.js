@@ -1,6 +1,6 @@
+var urlParse = require('url').parse;
 var isImage = require('is-image');
-var url = require('url');
 
-module.exports = function (urlStr) {
-	return urlStr ? isImage(url.parse(urlStr).pathname) : false;
+module.exports = function (url) {
+	return url ? isImage(urlParse(url).pathname) : false;
 };
