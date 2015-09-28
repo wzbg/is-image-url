@@ -25,6 +25,7 @@ isImageUrl('http://time.com/3981644/hong-kong-breast-assault-protest/');
 
 ## Related
 
+- [`is-url`](https://www.npmjs.com/package/is-url) - Check whether a string is a URL
 - [`is-image`](https://www.npmjs.com/package/is-image) - Check if a filepath is an image
 - [`sync-request`](https://www.npmjs.com/package/sync-request) - Make synchronous web requests
 - [`url`](https://www.npmjs.com/package/url) - The core url packaged standalone for use with Browserify
