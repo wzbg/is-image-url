@@ -11,11 +11,15 @@ module.exports = function (url) {
   if (isImage(pathname.split(':')[0])) {
     return true;
   }
-  var res = request('GET', url);
-  if (!res) return false;
-  var headers = res.headers;
-  if (!headers) return false;
-  var contentType = headers['content-type'];
-  if (!contentType) return false;
-  return contentType.search(/^image\//) != -1;
+  try {
+    var res = request('GET', url);
+    if (!res) return false;
+    var headers = res.headers;
+    if (!headers) return false;
+    var contentType = headers['content-type'];
+    if (!contentType) return false;
+    return contentType.search(/^image\//) != -1;
+  } catch (e) {
+    return false;
+  }
 };
