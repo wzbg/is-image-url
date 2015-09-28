@@ -3,7 +3,7 @@ var urlParse = require('url').parse;
 var isImage = require('is-image');
 var isUrl = require('is-url');
 
-module.exports = function (url) {
+module.exports = function (url, accurate) {
   if (!url) return false;
   if (!isUrl(url)) return false;
   var pathname = urlParse(url).pathname;
@@ -12,6 +12,7 @@ module.exports = function (url) {
     return true;
   }
   try {
+    if (!accurate) return false;
     var res = request('GET', url);
     if (!res) return false;
     var headers = res.headers;
