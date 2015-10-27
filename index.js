@@ -5,7 +5,7 @@ var isUrl = require('is-url');
 
 module.exports = function (url, accurate) {
   if (!url) return false;
-  if (!isUrl(url)) return false;
+  if (!isUrl(url)) return isImage(url);
   var pathname = urlParse(url).pathname;
   if (!pathname) return false;
   if (isImage(pathname.split(':')[0])) {
