@@ -5,15 +5,13 @@ var isUrl = require('is-url');
 
 module.exports = function (url, accurate) {
   if (!url) return false;
-  if (!isUrl(url)) return isImage(url);
   var http = url.lastIndexOf('http');
-  if (http == -1) return false;
-  url = url.substring(http);
+  if (http != -1) url = url.substring(http);
+  if (!isUrl(url)) return isImage(url);
   var pathname = urlParse(url).pathname;
   if (!pathname) return false;
   var last = pathname.search(/[:?&]/);
-  if (last != -1)
-    pathname = pathname.substring(0, last);
+  if (last != -1) pathname = pathname.substring(0, last);
   if (isImage(pathname)) return true;
   try {
     if (!accurate) return false;
