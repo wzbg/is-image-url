@@ -13,7 +13,7 @@ $ npm install --save is-image-url
 ## Usage
 
 ```js
-var isImageUrl = require('is-image-url');
+const isImageUrl = require('is-image-url');
 
 isImageUrl('https://timedotcom.files.wordpress.com/2015/08/gettyimages-482708894.jpg?quality=65&strip=color&w=1100');
 //=> true
