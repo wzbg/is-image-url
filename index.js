@@ -1,3 +1,5 @@
+'use strict';
+
 const request = require('sync-request');
 const urlParse = require('url').parse;
 const isImage = require('is-image');
