@@ -15,7 +15,7 @@ module.exports = (url, accurate, timeout) => {
   const last = pathname.search(/[:?&]/);
   if (last != -1) pathname = pathname.substring(0, last);
   if (isImage(pathname)) return true;
-  if (/styles/i.test(pathname)} return false;
+  if (/styles/i.test(pathname)) return false;
   try {
     if (!accurate) return false;
     if (!timeout) timeout = 60000;
